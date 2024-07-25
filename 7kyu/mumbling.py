@@ -15,6 +15,8 @@ def accum(st):
         for j in range (0,k):
             res = res + st[i].lower()
         k = k+1
+        res = res + "-"
+    res = res[:-1]
     print(res)
 
 accum('abcde')
